@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Mental: App de Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://gojs.net/latest/release/go.js"></script>
+</head>
+<body>
+    <h1>Mapa Mental: De la percepción del Usuario al Sistema de Delivery</h1>
+    <p>Haz clic en el botón para alternar entre el modelo mental del cliente y el modelo conceptual de la plataforma.</p>
+    
+    <div id="diagram-container"></div>
+
+    <div id="controls">
+        <button id="toggleButton">Ver Modelo Conceptual del Sistema</button>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="color-box user-color"></div>
+                <span>Modelo mental del cliente (Simple)</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box system-color"></div>
+                <span>Modelo conceptual de la plataforma (Técnico)</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Estilos generales con tema oscuro moderno */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Fondo azul oscuro profundo */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b0b0cc; /* Texto secundario grisáceo */
+    max-width: 600px;
+}
+
+/* Contenedor del diagrama con bordes y sombra */
+#diagram-container {
+    width: 90%;
+    height: 65vh; /* Altura adaptable */
+    background-color: #2c2c4a; /* Fondo del Canvas un poco más claro */
+    border: 2px solid #5a5a8a;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    margin-bottom: 20px;
+    max-width: 1000px;
+}
+
+/* Sección de controles y botón */
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5a5a8a;
+    border: none;
+    border-radius: 30px; /* Bordes muy redondeados */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Efecto hover interactivo para el botón */
+button:hover {
+    background-color: #fb7bb3; /* Cambia a rosa brillante */
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 6px 15px rgba(251, 123, 179, 0.4);
+}
+
+/* Estilos para la leyenda */
+.legend {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-box {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Colores específicos de la leyenda */
+.user-color { background-color: #4caf50; } /* Verde Usuario */
+.system-color { background-color: #f44336; } /* Rojo Sistema */
